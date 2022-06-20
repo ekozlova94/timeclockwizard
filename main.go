@@ -57,7 +57,7 @@ func main() {
 		log.Fatal("clock in: %w", err)
 	}
 
-	time.Sleep(30 * time.Minute)
+	time.Sleep(3 * time.Hour)
 
 	if err := data.logIn(); err != nil {
 		log.Fatal("log in: %w", err)
@@ -75,7 +75,7 @@ func main() {
 		log.Fatal("break out: %w", err)
 	}
 
-	time.Sleep(5 * time.Minute)
+	time.Sleep(5 * time.Hour)
 
 	if err := data.logIn(); err != nil {
 		log.Fatal("log in: %w", err)
